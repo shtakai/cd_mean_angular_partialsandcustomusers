@@ -6,8 +6,7 @@ angular.module('myApp').controller('customizeUsersController',[
   this.index = () => {
     console.log('index start');
     userFactory.index((data)=>{
-      console.log('returned data', data);
-      this.data = data;
+      this.users = data;
     })
   }
   this.create = () => {
@@ -21,6 +20,17 @@ angular.module('myApp').controller('customizeUsersController',[
         this.users = data;
       }
     );
+  }
+
+  this.delete = (_user) => {
+    console.log('C delete');
+    userFactory.delete(
+      _user,
+      (data) => {
+        console.log(`returned data ${data}`);
+        this.users = data;
+      }
+    )
   }
 
 }])
