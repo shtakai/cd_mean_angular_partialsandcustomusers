@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>partials and custom users</title>
+</head>
+<body>
+  <div class="container" ng-app="myApp">
+    <div>
+      <a href="#/users">user customize</a>
+      <a href="#/list">user list</a>
+    </div>
+    <div ng-view></div>
+
+    <div>
+      <a href="#/users">user customize</a>
+      <a href="#/list">user list</a>
+    </div>
+  </div>
+</body>
+<script src="angular/angular.js"></script>
+<script src="angular-route/angular-route.js"></script>
+<script src="lodash/lodash.js"></script>
+<script src="chance/chance.js"></script>
+<script src="main.js"></script>
+<script src="users.factory.js"></script>
+<script src="customize.users.controller.js"></script>
+<script src="user.lists.controller.js"></script>
+
+
+</html>
