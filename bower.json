@@ -1,0 +1,20 @@
+{
+  "name": "cd_mean_angular_partialsandcustomusers",
+  "homepage": "https://github.com/shtakai/cd_mean_angular_partialsandcustomusers",
+  "authors": [
+    "Alyson Takai <shtakai@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.13.1"
+  }
+}
