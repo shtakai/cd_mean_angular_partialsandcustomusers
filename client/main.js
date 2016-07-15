@@ -26,7 +26,7 @@ angular.module('myApp').config(($routeProvider)=> {
       controllerAs: 'c',
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/users'
     });
 });
 

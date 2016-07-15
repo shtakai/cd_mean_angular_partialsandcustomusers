@@ -21,9 +21,5 @@ angular.module('myApp').factory('userFactory', function(){
     });
     callback(_users);
   }
-
-
-
-
   return factory;
 })

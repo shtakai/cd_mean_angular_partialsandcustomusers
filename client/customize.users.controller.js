@@ -16,7 +16,6 @@ angular.module('myApp').controller('customizeUsersController',[
       this.lastName,
       this.language,
       (data) => {
-        console.log(`returned data ${data}`);
         this.users = data;
       }
     );
@@ -27,7 +26,6 @@ angular.module('myApp').controller('customizeUsersController',[
     userFactory.delete(
       _user,
       (data) => {
-        console.log(`returned data ${data}`);
         this.users = data;
       }
     )
